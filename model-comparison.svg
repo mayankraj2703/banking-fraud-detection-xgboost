@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="510" viewBox="0 0 980 510" role="img" aria-labelledby="title desc">
+<title id="title">Fraud-class model comparison</title>
+<desc id="desc">Grouped horizontal bars compare precision, recall, and F1 for seven classifiers at their notebook-reported default thresholds.</desc>
+<style>
+ text{font-family:Arial,Helvetica,sans-serif;fill:#1f2937}.title{font-size:23px;font-weight:700}.subtitle{font-size:13px;fill:#526173}.label{font-size:13px}.tick{font-size:11px;fill:#526173}.legend{font-size:12px}.grid{stroke:#dbe3ec;stroke-width:1}.axis{stroke:#64748b;stroke-width:1.2}
+</style>
+<rect width="980" height="510" fill="#ffffff"/>
+<text x="28" y="36" class="title">Fraud-class metrics by model</text>
+<text x="28" y="58" class="subtitle">Notebook test set · default model thresholds · horizontal scale 0 to 1</text>
+<rect x="542" y="22" width="12" height="12" fill="#3977c3"/><text x="560" y="33" class="legend">Precision</text>
+<rect x="642" y="22" width="12" height="12" fill="#e39a34"/><text x="660" y="33" class="legend">Recall</text>
+<rect x="718" y="22" width="12" height="12" fill="#4b9b73"/><text x="736" y="33" class="legend">F1</text>
+<line x1="205" y1="88" x2="205" y2="431" class="axis"/><line x1="205" y1="431" x2="855" y2="431" class="axis"/>
+<g class="grid"><line x1="335" y1="88" x2="335" y2="431"/><line x1="465" y1="88" x2="465" y2="431"/><line x1="595" y1="88" x2="595" y2="431"/><line x1="725" y1="88" x2="725" y2="431"/><line x1="855" y1="88" x2="855" y2="431"/></g>
+<g class="tick" text-anchor="middle"><text x="205" y="451">0.0</text><text x="335" y="451">0.2</text><text x="465" y="451">0.4</text><text x="595" y="451">0.6</text><text x="725" y="451">0.8</text><text x="855" y="451">1.0</text></g>
+<g class="label" text-anchor="end">
+<text x="192" y="115">Logistic Reg.</text><text x="192" y="160">KNN</text><text x="192" y="205">Linear SVM</text><text x="192" y="250">Decision Tree</text><text x="192" y="295">Random Forest</text><text x="192" y="340" font-weight="700">XGBoost</text><text x="192" y="385">Neural Network</text>
+</g>
+<!-- Logistic: 0.3953, 0.0613, 0.1061 -->
+<rect x="205" y="100" width="257" height="8" rx="2" fill="#3977c3"/><rect x="205" y="111" width="40" height="8" rx="2" fill="#e39a34"/><rect x="205" y="122" width="69" height="8" rx="2" fill="#4b9b73"/>
+<!-- KNN: 0.6872, 0.3129, 0.4300 -->
+<rect x="205" y="145" width="447" height="8" rx="2" fill="#3977c3"/><rect x="205" y="156" width="203" height="8" rx="2" fill="#e39a34"/><rect x="205" y="167" width="280" height="8" rx="2" fill="#4b9b73"/>
+<!-- SVM: 0.0176, 0.9968, 0.0345 -->
+<rect x="205" y="190" width="11" height="8" rx="2" fill="#3977c3"/><rect x="205" y="201" width="648" height="8" rx="2" fill="#e39a34"/><rect x="205" y="212" width="22" height="8" rx="2" fill="#4b9b73"/>
+<!-- Tree: 0.0366, 0.9935, 0.0706 -->
+<rect x="205" y="235" width="24" height="8" rx="2" fill="#3977c3"/><rect x="205" y="246" width="646" height="8" rx="2" fill="#e39a34"/><rect x="205" y="257" width="46" height="8" rx="2" fill="#4b9b73"/>
+<!-- RF: 0.0788, 0.9927, 0.1460 -->
+<rect x="205" y="280" width="51" height="8" rx="2" fill="#3977c3"/><rect x="205" y="291" width="645" height="8" rx="2" fill="#e39a34"/><rect x="205" y="302" width="95" height="8" rx="2" fill="#4b9b73"/>
+<!-- XGB: 0.1517, 0.9976, 0.2633 -->
+<rect x="205" y="325" width="99" height="8" rx="2" fill="#3977c3"/><rect x="205" y="336" width="648" height="8" rx="2" fill="#e39a34"/><rect x="205" y="347" width="171" height="8" rx="2" fill="#4b9b73"/>
+<!-- MLP: 0.0195, 0.9968, 0.0382 -->
+<rect x="205" y="370" width="13" height="8" rx="2" fill="#3977c3"/><rect x="205" y="381" width="648" height="8" rx="2" fill="#e39a34"/><rect x="205" y="392" width="25" height="8" rx="2" fill="#4b9b73"/>
+<text x="28" y="485" class="subtitle">KNN had the highest default-threshold fraud F1; XGBoost had the highest reported PR average precision and recall.</text>
+</svg>
